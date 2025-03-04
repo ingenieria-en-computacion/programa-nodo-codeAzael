@@ -1,5 +1,6 @@
 #include "nodo.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 NODO* crear_nodo()
 {
@@ -34,8 +35,9 @@ DATO obtener_dato(NODO *n)
 {
     if (n != NULL)
     {
+        return n->dato;
     }
-    return n;
+    return 0;
 }
 
 NODO* asignar_ref(NODO *n, NODO *e)
